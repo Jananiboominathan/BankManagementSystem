@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureBank - Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="form-container">
+    <h2>Create Bank Account</h2>
+
+    <input type="text" id="accountNumber" placeholder="Account Number" required>
+    <input type="text" id="customerName" placeholder="Full Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <input type="number" id="balance" placeholder="Initial Deposit" min="0" required>
+
+    <button onclick="register()">Create Account</button>
+
+    <p id="message" class="message"></p>
+
+    <p class="small-text">
+        Already registered? <a href="login.html">Login</a>
+    </p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
